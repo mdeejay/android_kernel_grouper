@@ -233,14 +233,14 @@ static void rev_sku_to_speedo_ids(int rev, int sku)
 		case 0x83: /* T30L or T30S */
 			switch (package_id) {
 			case 1: /* MID => T30L */
-				cpu_speedo_id = 7;
-				soc_speedo_id = 1;
-				threshold_index = 10;
+				cpu_speedo_id = 5;
+				soc_speedo_id = 2;
+				threshold_index = 8;
 				break;
 			case 2: /* DSC => T30S */
-				cpu_speedo_id = 3;
+				cpu_speedo_id = 6;
 				soc_speedo_id = 2;
-				threshold_index = 3;
+				threshold_index = 9;
 				break;
 			default:
 				pr_err("Tegra3 Rev-A02: Reserved pkg: %d\n",
